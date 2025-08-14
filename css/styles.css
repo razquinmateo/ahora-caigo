@@ -1,0 +1,303 @@
+/* =============================
+    Estilos Generales
+============================= */
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.5s ease;
+}
+
+body.bg-dark.perdio-vida {
+  background-color: #540000 !important;
+}
+
+h1,
+h4 {
+  color: #ffffff;
+}
+
+/* =============================
+    Pantalla Inicial
+============================= */
+#pantalla-inicial {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.pantalla-oculta {
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+}
+
+/* =============================
+    Pista y Casillas
+============================= */
+#contenedor-pista {
+  border-left: 5px solid #0d6efd;
+}
+
+.casilla {
+  width: 40px;
+  height: 50px;
+  background-color: #ffffff;
+  color: #000;
+  border-radius: 5px;
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+  box-shadow: 0 0 5px #333;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.casilla.correcta {
+  background-color: #28a745;
+  color: white;
+}
+
+.casilla.incorrecta {
+  background-color: #dc3545;
+  color: white;
+}
+
+.casilla.letra-pista {
+  color: #000000;
+  font-weight: 600;
+}
+
+.casilla-espacio {
+  width: 20px;
+  height: 50px;
+  margin: 4px;
+  background-color: transparent;
+  border: none;
+  display: inline-block;
+}
+
+#descripcion-curiosidad {
+  animation: fadeIn 0.5s ease;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+/* Responsive casillas */
+@media (max-width: 576px) {
+  .casilla {
+    width: 30px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+  }
+}
+
+/* =============================
+    Temporizador y Footer
+============================= */
+#temporizador {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #ffc107;
+}
+
+#footer-juego {
+  display: flex;
+  justify-content: space-between; /* separación entre columnas */
+  align-items: center; /* alinea verticalmente entre columnas */
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+}
+
+#footer-juego .columna {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centra horizontalmente */
+  justify-content: center; /* centra verticalmente el contenido dentro de cada columna */
+  gap: 5px;
+}
+
+#footer-juego strong {
+  font-size: 1.2rem;
+}
+
+#vidas,
+#ronda-actual {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 576px) {
+  #footer-juego {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    max-width: 100%;
+    padding: 10px;
+  }
+}
+
+/* =============================
+    Botones de acción
+============================= */
+.btn-mismo-tamano {
+  width: 150px;
+}
+
+#btn-iniciar-ronda.animated {
+  animation: pulse 0.6s ease infinite;
+}
+
+#btn-ranking {
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+#btn-ranking i {
+  font-size: 1rem;
+}
+
+#btn-ranking:hover {
+  background-color: gold;
+  color: black;
+}
+
+/* =============================
+    Animaciones
+============================= */
+/* Mensaje correcto animado */
+#mensaje-correcto {
+  animation: fadeInUp 0.6s ease;
+}
+
+/* Clases de transición */
+.fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.fade-out {
+  animation: fadeOut 0.5s ease forwards;
+}
+
+/* Animación de borde para pista */
+.borde-parpadeante {
+  animation: parpadeo-rojo 1s infinite;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #8b0000;
+  border-radius: 6px;
+}
+
+/* Definiciones de las animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes parpadeo-rojo {
+  0%,
+  100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #8b0000;
+  }
+}
+
+/* =============================
+    Mensaje de victoria y confeti
+============================= */
+
+#mensaje-final {
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 2px solid gold;
+  background: linear-gradient(90deg, #ffd700, #ffecb3);
+  color: #000;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px gold;
+  text-align: center;
+  margin-bottom: 20px;
+  animation: aparecer 0.6s ease-out;
+}
+
+@keyframes aparecer {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#confeti-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.confeti {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  top: -10px;
+  animation-name: caer;
+  animation-timing-function: linear;
+}
+
+@keyframes caer {
+  to {
+    transform: translateY(100vh) rotate(360deg);
+  }
+}

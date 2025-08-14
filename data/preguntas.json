@@ -1,0 +1,372 @@
+[
+  {
+    "pista": "Es la ausencia de sonido.",
+    "respuesta": "SILENCIO",
+    "descripcion": "El silencio es la ausencia total del sonido."
+  },
+  {
+    "pista": "Es el insecto que produce miel.",
+    "respuesta": "ABEJA",
+    "descripcion": "Sabías que una sola abeja produce aproximadamente solo una cucharadita de miel en toda su vida?"
+  },
+  {
+    "pista": "Es limpiar alguna cosa frotando con cepillo o trapo, con agua y jabón.",
+    "respuesta": "FREGAR",
+    "descripcion": "El término 'fregar' tiene un origen curioso. Viene del latín fricare, que significa 'frotar' o 'restregar', lo cual describe perfectamente la acción de limpiar a fondo."
+  },
+  {
+    "pista": "Es cuando distingues a una persona de los demás por sus rasgos o características.",
+    "respuesta": "RECONOCER",
+    "descripcion": "Esta palabra proviene del latín recognoscere. El prefijo re- indica repetición, y cognoscere significa 'conocer'. Es decir, 'volver a conocer' a algo o a alguien."
+  },
+  {
+    "pista": "Es un personaje de ficción que cuando miente le crece la nariz.",
+    "respuesta": "PINOCHO",
+    "descripcion": "La historia original de Pinocho es bastante diferente a la versión de Disney que conocemos. En el libro de Carlo Collodi, Pinocho era un personaje mucho más travieso y el grillo que hacía de conciencia, en lugar de ser un amigo, era aplastado por el propio Pinocho."
+  },
+  {
+    "pista": "Es la parte del cuerpo de Adán que usó Dios para crear a Eva.",
+    "respuesta": "COSTILLA",
+    "descripcion": "En el mito de la creación de Eva, la costilla de Adán se menciona como el material que Dios usó para formarla. Curiosamente, esta creencia ha llevado a que algunas culturas se pregunten por qué los hombres tienen el mismo número de costillas que las mujeres."
+  },
+  {
+    "pista": "Es el lugar al que vas a para cortarte o teñirte el pelo.",
+    "respuesta": "PELUQUERÍA",
+    "descripcion": "El nombre de este oficio proviene del pelo, pero en la antigua Roma, las peluquerías no solo cortaban el cabello, sino que también realizaban afeitados, masajes y manicuras, ¡eran como pequeños spas!"
+  },
+  {
+    "pista": "Así es algo que tiene consecuencias perjudiciales.",
+    "respuesta": "GRAVE",
+    "descripcion": "La palabra 'grave' viene del latín gravis, que significaba 'pesado'. Con el tiempo, su significado evolucionó para referirse no solo a algo con peso físico, sino también a algo de gran importancia o con consecuencias serias, como una enfermedad grave o un error grave."
+  },
+  {
+    "pista": "Es unir o poner en comunicación dos o más cosas o personas.",
+    "respuesta": "CONECTAR",
+    "descripcion": "En el mundo de la informática, el concepto de conectar se volvió tan importante que en 1974 se inventó el conector RJ-45, que se usa para conectar los cables de internet a las computadoras."
+  },
+  {
+    "pista": "Cuando algo no tiene ninguna causa o razón, decimos que es \"sin ton...\".",
+    "respuesta": "NI SON",
+    "descripcion": "La expresión 'sin ton ni son' se refiere a algo que no tiene sentido. El 'ton' y el 'son' hacen alusión a la música, donde el tono y el sonido son fundamentales para que una melodía tenga armonía y sentido."
+  },
+  {
+    "pista": "Son la cantidad de colores que hay en un Cubo de Rubik.",
+    "respuesta": "6",
+    "descripcion": "En 1974, el profesor húngaro Ernő Rubik creó el cubo mágico, que luego sería conocido como Cubo de Rubik."
+  },
+  {
+    "pista": "Es la competencia deportiva que comprende cinco pruebas específicas.",
+    "respuesta": "PENTATLÓN",
+    "descripcion": "El término 'pentatlón' viene del griego pénte (cinco) y áthlon (competición). Es una prueba deportiva que combina cinco disciplinas, que en los Juegos Olímpicos modernos son esgrima, natación, equitación, tiro deportivo y carrera a pie."
+  },
+  {
+    "pista": "Claudia Di Girólamo, Carolina Arregui y Gloria Munchmeyer son...",
+    "respuesta": "ACTRICES",
+    "descripcion": "Claudia Di Girólamo, Carolina Arregui y Gloria Munchmeyer son reconocidas actrices chilenas que han participado en numerosas teleseries y obras de teatro, dejando una huella importante en la televisión de su país."
+  },
+  {
+    "pista": "Es el mes en el que desarrolla \"Teatro a Mil\".",
+    "respuesta": "ENERO",
+    "descripcion": "El Festival Internacional Teatro a Mil se celebra cada enero en Santiago de Chile. Es uno de los eventos culturales más importantes de Latinoamérica y atrae a miles de espectadores con una gran variedad de espectáculos teatrales, musicales y de danza."
+  },
+  {
+    "pista": "Es algo bueno y que deseamos, pero que es imposible o muy difícil de realizar.",
+    "respuesta": "UTOPÍA",
+    "descripcion": "El término 'utopía' fue acuñado por Tomás Moro en su libro Utopía de 1516. La palabra combina el griego ou ('no') y tópos ('lugar'), es decir, 'lugar que no existe', para referirse a una sociedad ideal e inalcanzable."
+  },
+  {
+    "pista": "Coloquialmente, así es alguien \"astuto\", \"listo\" o \"despierto\".",
+    "respuesta": "AVISPADO",
+    "descripcion": "El origen de la palabra avispado viene de la avispa. Este insecto es conocido por ser rápido y astuto, de ahí que se use para describir a una persona lista y vivaz."
+  },
+  {
+    "pista": "Es el espacio que se recorre de un punto a otro.",
+    "respuesta": "TRAYECTO",
+    "descripcion": "El concepto de trayecto es clave en la física. El trayecto se refiere al camino que un objeto sigue, mientras que el desplazamiento es la distancia en línea recta entre el punto de partida y el punto de llegada."
+  },
+  {
+    "pista": "Según el dicho: \"A palabras necias...\".",
+    "respuesta": "OÍDOS SORDOS",
+    "descripcion": "El dicho 'a palabras necias, oídos sordos' significa que no debemos prestar atención a los comentarios tontos o malintencionados. La frase existe en varios idiomas, demostrando su relevancia universal."
+  },
+  {
+    "pista": "Es cortar o quitar las ramas de los árboles.",
+    "respuesta": "PODAR",
+    "descripcion": "La poda es una práctica ancestral en la agricultura. Aunque cortar ramas puede parecer perjudicial, en realidad ayuda a que las plantas y árboles crezcan más fuertes, sanos y con frutos de mejor calidad."
+  },
+  {
+    "pista": "Joe Vasconcellos canta: \"Llevo tres días sin dormir, hago de todo para olvidar, creo que...\".",
+    "respuesta": "NO PODRÉ SOPORTAR",
+    "descripcion": "La canción 'No Podré Soportar' de Joe Vasconcellos es una de las más reconocidas del artista chileno. Se publicó en 1995 como parte de su álbum Toque, y se convirtió en un éxito que todavía se escucha en las radios."
+  },
+  {
+    "pista": "Es el color característico del traje de \"El Zorro\".",
+    "respuesta": "NEGRO",
+    "descripcion": "El traje de El Zorro, el héroe enmascarado, es negro porque el autor, Johnston McCulley, buscaba crear un personaje misterioso y sombrío, y el color negro simbolizaba la noche y la oscuridad en la que el héroe operaba."
+  },
+  {
+    "pista": "Es un tubo largo y flexible que se utiliza para regar.",
+    "respuesta": "MANGUERA",
+    "descripcion": "La manguera moderna fue inventada en el siglo XVII por los hermanos neerlandeses Jan y Nicolaas van der Heyden para luchar contra los incendios en Ámsterdam. Fue un gran avance en la seguridad de la ciudad."
+  },
+  {
+    "pista": "Nombre del Pokemón más famoso del mundo.",
+    "respuesta": "PIKACHU",
+    "descripcion": "Pikachu no solo es el Pokémon más famoso, sino también el símbolo de la franquicia. El nombre proviene de las palabras japonesas pika, que significa 'chispa', y chu, que es la onomatopeya del sonido de un ratón."
+  },
+  {
+    "pista": "Es algo que pertenece a varias personas o algo ordinario que no tiene nada de especial.",
+    "respuesta": "COMÚN",
+    "descripcion": "La palabra común viene del latín communis, que significa 'perteneciente a todos'. Este término ha evolucionado para describir tanto algo compartido como algo que es ordinario y carece de particularidad."
+  },
+  {
+    "pista": "Michael Jackson comenzó cantando con sus hermanos en una banda llamada.",
+    "respuesta": "THE JACKSON 5",
+    "descripcion": "The Jackson 5 se formó en 1964 en Gary, Indiana. Estaba compuesta por los hermanos Jackie, Tito, Jermaine, Marlon y el pequeño Michael Jackson, quienes se convirtieron en superestrellas mundiales en la década de 1970."
+  },
+  {
+    "pista": "Así es algo que pincha.",
+    "respuesta": "PUNZANTE",
+    "descripcion": "El origen de la palabra punzante viene del latín pungere, que significa 'picar' o 'pinchar'. Se usa para describir no solo un objeto afilado, sino también un dolor intenso o un comentario hiriente."
+  },
+  {
+    "pista": "Según el dicho: \"A buen entendedor...\".",
+    "respuesta": "POCAS PALABRAS",
+    "descripcion": "El refrán 'a buen entendedor, pocas palabras' hace referencia a que una persona inteligente no necesita explicaciones largas. Con solo una sugerencia o una pista breve, comprende el mensaje completo."
+  },
+  {
+    "pista": "Así es algo relacionado al corazón.",
+    "respuesta": "CARDÍACO",
+    "descripcion": "La palabra cardíaco proviene del griego kardiakos, que significa 'relativo al corazón'. El término se usa tanto en medicina para describir enfermedades del corazón como en el lenguaje popular para referirse a algo emocionante o estresante."
+  },
+  {
+    "pista": "En algunos bailes, es dar golpes en el suelo con los pies calzados.",
+    "respuesta": "ZAPATEAR",
+    "descripcion": "Zapatear es una técnica de baile común en el flamenco y en varios bailes folclóricos de Latinoamérica, donde el ritmo y la fuerza se logran con el sonido de los pies golpeando el suelo."
+  },
+  {
+    "pista": "Es una expresión para referirse a alguien con quien se tiene una conexión sentimental profunda y natural.",
+    "respuesta": "ALMA GEMELA",
+    "descripcion": "El concepto de alma gemela se originó en la mitología griega, en el mito de El Banquete de Platón. En el mito, los humanos eran originalmente esferas con dos caras, cuatro brazos y cuatro piernas. Zeus los dividió en dos, y desde entonces, cada mitad busca a su otra mitad."
+  },
+  {
+    "pista": "Fue uno de los personajes interpretado por el actor Álvaro Rudolphy en \"Amores de Mercado\".",
+    "respuesta": "PEYUCO",
+    "descripcion": "En la famosa teleserie chilena Amores de Mercado, el actor Álvaro Rudolphy interpretó a dos personajes: el humilde Rodolfo y el pícaro 'Peyuco', el gemelo que fue separado al nacer, un personaje que se ganó el cariño del público."
+  },
+  {
+    "pista": "En esta obra de Shakespeare, un príncipe busca vengar el asesinato de su padre.",
+    "respuesta": "HAMLET",
+    "descripcion": "La tragedia de William Shakespeare, Hamlet, es una de las obras de teatro más representadas de la historia. La frase icónica 'Ser o no ser, esa es la cuestión' proviene de esta obra, donde el príncipe reflexiona sobre la vida y la muerte."
+  },
+  {
+    "pista": "Es el país donde se realizaran las próximas olimpiadas.",
+    "respuesta": "FRANCIA",
+    "descripcion": "Las próximas Olimpiadas de verano se celebrarán en la ciudad de París, la capital de Francia. Será la tercera vez que la ciudad acoge los juegos, después de 1900 y 1924, y será un evento deportivo de gran envergadura."
+  },
+  {
+    "pista": "Es la planta comestible de color verde con hojas pequeñas y duras.",
+    "respuesta": "ALCACHOFA",
+    "descripcion": "La alcachofa no es una verdura como tal, sino que es la flor inmadura de una planta de la familia de los cardos. Si se deja crecer, se convierte en una flor de un hermoso color morado."
+  },
+  {
+    "pista": "Fue la última reina de Egipto.",
+    "respuesta": "CLEOPATRA",
+    "descripcion": "Cleopatra no era egipcia de nacimiento. Ella era descendiente de Ptolomeo I, un general macedonio de Alejandro Magno, lo que la convertía en una reina de ascendencia griega que gobernó Egipto."
+  },
+  {
+    "pista": "Futbolista chileno fue elegido como el mejor de América en 1976. Un estadio lleva su nombre.",
+    "respuesta": "ELÍAS FIGUEROA",
+    "descripcion": "Elías Figueroa es considerado uno de los mejores futbolistas chilenos de la historia. Fue elegido como el mejor jugador de América tres veces consecutivas, y el estadio de Valparaíso lleva su nombre en su honor."
+  },
+  {
+    "pista": "Es el popular museo donde se exhibe la famosa escultura de mármol \"La Venus de MIlo\".",
+    "respuesta": "LOUVRE",
+    "descripcion": "El Museo del Louvre, en París, es uno de los museos más grandes y visitados del mundo. Su famosa pirámide de cristal en la entrada se diseñó para darle un aspecto moderno al antiguo palacio y se inauguró en 1989."
+  },
+  {
+    "pista": "Es aclarar algo con precisión, es decir, \"poner los puntos...\".",
+    "respuesta": "SOBRE LAS ÍES",
+    "descripcion": "La expresión 'poner los puntos sobre las íes' viene de la época en que la escritura a mano era la norma. Era fácil confundir las letras 'i' y 'u', por lo que poner el punto sobre la 'i' aseguraba la claridad, de ahí que se use para referirse a aclarar algo con total precisión."
+  },
+  {
+    "pista": "Según la leyenda, los hermano fundadores de la ciudad de Roma fueron Rómulo y...",
+    "respuesta": "REMO",
+    "descripcion": "Según la mitología romana, los hermanos Rómulo y Remo fueron abandonados en el río Tíber y amamantados por una loba. Sin embargo, en lugar de fundar Roma juntos, se dice que Rómulo mató a Remo en una disputa sobre dónde construir la nueva ciudad."
+  },
+  {
+    "pista": "Es la montaña más alta de Chile.",
+    "respuesta": "OJOS DEL SALADO",
+    "descripcion": "El Ojos del Salado es la montaña más alta de Chile y el volcán activo más alto del mundo. Su nombre se debe a los depósitos de sal y lagunas que se encuentran en sus laderas, dándole la apariencia de 'ojos'."
+  },
+  {
+    "pista": "Nombre del famoso guerrero de la mitología griega cuya debilidad era el talón.",
+    "respuesta": "AQUILES",
+    "descripcion": "La leyenda de Aquiles dice que su madre, la diosa Tetis, lo sumergió en el río Estigia para hacerlo invulnerable. Sin embargo, lo sostuvo por el talón, que fue la única parte de su cuerpo que no tocó el agua y que se convirtió en su única debilidad, dándole origen a la expresión 'talón de Aquiles'."
+  },
+  {
+    "pista": "Fue el año que Chile fue sede de la Copa Mundial de Fútbol.",
+    "respuesta": "1962",
+    "descripcion": "En el año 1962, Chile fue el país anfitrión de la Copa Mundial de Fútbol. Es considerado uno de los hitos más importantes en la historia deportiva del país."
+  },
+  {
+    "pista": "Cuando llegamos a tiempo, pero totalmente apurados y cansados, decimos que manera coloquial que llegamos con \"la...\".",
+    "respuesta": "LENGUA AFUERA",
+    "descripcion": "La expresión 'con la lengua afuera' es una forma coloquial de decir que se llegó a un lugar muy cansado. La frase imita la imagen de los perros, que jadean y sacan la lengua después de hacer un gran esfuerzo físico."
+  },
+  {
+    "pista": "Es un sinónimo de \"hombre\" y \"persona\".",
+    "respuesta": "SER HUMANO",
+    "descripcion": "El término 'ser humano' se usa para referirse al Homo sapiens como una especie. Es un concepto que no solo designa al hombre y a la mujer, sino que además abarca toda la complejidad de la existencia humana."
+  },
+  {
+    "pista": "El color que representa la esperanza.",
+    "respuesta": "VERDE",
+    "descripcion": "El color verde se ha asociado históricamente con la esperanza, la vida, la naturaleza y el crecimiento. El color se encuentra en la bandera de muchos países, simbolizando la fertilidad de la tierra."
+  },
+  {
+    "pista": "Es el lado del cuerpo en que se encuentra el apéndice.",
+    "respuesta": "DERECHO",
+    "descripcion": "El apéndice es un pequeño órgano que se encuentra en el lado derecho del cuerpo, unido al intestino grueso. Aunque su función exacta todavía es objeto de debate, muchos científicos creen que tiene un papel en el sistema inmunitario."
+  },
+  {
+    "pista": "Sinónimo de \"extraordinario\" o \"maravilloso\".",
+    "respuesta": "GENIAL",
+    "descripcion": "La palabra genial viene del latín genialis, que se refiere a un genio o espíritu protector. Con el tiempo, el término evolucionó para describir a alguien con un talento extraordinario o algo asombroso."
+  },
+  {
+    "pista": "Es el toro castrado, que se utiliza como animal de fuerza.",
+    "respuesta": "BUEY",
+    "descripcion": "El buey ha sido un animal de trabajo fundamental en la historia de la agricultura y el transporte. Al ser castrado, el buey se vuelve más dócil y maneja mejor el estrés, lo que lo hace ideal para tirar de arados y carros."
+  },
+  {
+    "pista": "Es donde se hierve el agua para preparar té y otras infusiones.",
+    "respuesta": "TETERA",
+    "descripcion": "Las teteras se han usado durante miles de años para preparar té. Su diseño con un pico largo y un asa se ha mantenido prácticamente sin cambios desde que se popularizó en China, donde el té se ha consumido desde el 2000 a.C."
+  },
+  {
+    "pista": "Es el tejido ubicado en la parte de atrás del ojo y que es sensible a la luz.",
+    "respuesta": "RETINA",
+    "descripcion": "La retina es el tejido sensible a la luz que se encuentra en la parte de atrás del ojo. Su función es crucial para la visión, ya que convierte la luz en impulsos nerviosos que el cerebro interpreta para crear imágenes."
+  },
+  {
+    "pista": "Es sostener o demostrar que un dicho o hecho es falso.",
+    "respuesta": "DESMENTIR",
+    "descripcion": "El término desmentir proviene de la palabra mentira. Desmentir algo es negarlo y demostrar que no es verdad, lo que lo hace un término muy útil en el periodismo y en las discusiones cotidianas para aclarar hechos y rumores."
+  },
+  {
+    "pista": "Bacilos canta: \"Mientras siga viendo tu cara en la cara de...\".",
+    "respuesta": "LA LUNA",
+    "descripcion": "La canción 'Mi Primer Millón' de la banda colombiana Bacilos se convirtió en un éxito rotundo en el 2002. Su letra incluye la frase 'Mientras siga viendo tu cara en la cara de la luna', que se ha quedado grabada en la memoria de muchos fanáticos de la música latina."
+  },
+  {
+    "pista": "¿Cuál es el río más largo del mundo?",
+    "respuesta": "AMAZONAS",
+    "descripcion": "El río Amazonas, además de ser el más largo, también es el más caudaloso del mundo, transportando más agua que los siete ríos que le siguen combinados. Fluye a través de varios países de América del Sur, siendo un ecosistema vital."
+  },
+  {
+    "pista": "¿Cuál es el país más grande del mundo?",
+    "respuesta": "RUSIA",
+    "descripcion": "Rusia es el país más grande del mundo por área, cubriendo más de 17 millones de kilómetros cuadrados. Su vasta extensión abarca dos continentes, Europa y Asia, y contiene once zonas horarias diferentes."
+  },
+  {
+    "pista": "¿Quién escribió 'Don Quijote de la Mancha'?",
+    "respuesta": "MIGUEL DE CERVANTES",
+    "descripcion": "Miguel de Cervantes Saavedra, un soldado, novelista, poeta y dramaturgo español, es considerado uno de los escritores más grandes de la literatura universal. 'Don Quijote de la Mancha' es su obra más famosa y una de las más influyentes de la historia literaria."
+  },
+  {
+    "pista": "¿Cuál es el planeta más grande del sistema solar?",
+    "respuesta": "JÚPITER",
+    "descripcion": "Júpiter es el planeta más grande del sistema solar, con una masa dos veces y media mayor que la de todos los demás planetas juntos. Es un gigante gaseoso conocido por su gran mancha roja, que es una tormenta anticiclónica más grande que la Tierra."
+  },
+  {
+    "pista": "¿Cuál es el nombre del proceso por el cual las plantas producen su propio alimento?",
+    "respuesta": "FOTOSÍNTESIS",
+    "descripcion": "La fotosíntesis es un proceso químico vital para la vida en la Tierra. En este proceso, las plantas, algas y algunas bacterias utilizan la energía de la luz solar para convertir dióxido de carbono y agua en glucosa, su alimento, liberando oxígeno como subproducto."
+  },
+  {
+    "pista": "¿Quién pintó 'La Gioconda'?",
+    "respuesta": "LEONARDO DA VINCI",
+    "descripcion": "La Gioconda, también conocida como la 'Mona Lisa', es la obra más famosa de Leonardo da Vinci, un genio del Renacimiento que fue pintor, escultor, arquitecto, científico, escritor e inventor. La enigmática sonrisa de la modelo ha sido objeto de fascinación por siglos."
+  },
+  {
+    "pista": "¿En qué año se produjo la Revolución Francesa?",
+    "respuesta": "1789",
+    "descripcion": "La Revolución Francesa fue un conflicto social y político que se inició en el año 1789 y que transformó la política de Francia y el resto de Europa. El evento dio paso al fin del absolutismo monárquico y a la Declaración de los Derechos del Hombre y del Ciudadano."
+  },
+  {
+    "pista": "¿Cuál es la capital de Australia?",
+    "respuesta": "CANBERRA",
+    "descripcion": "Aunque Sídney y Melbourne son las ciudades más conocidas de Australia, la capital es Canberra. Esta ciudad se planificó de forma deliberada para ser la capital del país, siendo un compromiso entre las dos grandes ciudades australianas."
+  },
+  {
+    "pista": "¿Qué animal es conocido por su gran memoria?",
+    "respuesta": "ELEFANTE",
+    "descripcion": "Los elefantes tienen un cerebro grande y muy desarrollado, lo que les permite tener una memoria excepcional. Son capaces de recordar rutas de migración, reconocer a otros elefantes después de años de separación e incluso recordar la ubicación de fuentes de agua."
+  },
+  {
+    "pista": "¿Qué tipo de animal es el delfín?",
+    "respuesta": "MAMÍFERO",
+    "descripcion": "Aunque viven en el agua, los delfines son mamíferos. Respiran aire a través de sus pulmones, paren crías vivas que amamantan y mantienen una temperatura corporal constante. Son conocidos por su inteligencia y su naturaleza social."
+  },
+  {
+    "pista": "¿Cuál es el océano más grande del mundo?",
+    "respuesta": "OCÉANO PACÍFICO",
+    "descripcion": "El Océano Pacífico es el océano más grande del mundo, cubriendo más de 63 millones de millas cuadradas. Se extiende desde el Ártico en el norte hasta la Antártida en el sur, y limita con Asia y Australia al oeste y América al este."
+  },
+  {
+    "pista": "¿Quién fue el primer hombre en caminar sobre la Luna?",
+    "respuesta": "NEIL ARMSTRONG",
+    "descripcion": "Neil Armstrong fue el primer ser humano en caminar sobre la Luna el 20 de julio de 1969 durante la misión Apollo 11. Su famosa frase 'Un pequeño paso para un hombre, un gran salto para la humanidad' se ha convertido en un símbolo del logro humano."
+  },
+  {
+    "pista": "¿Qué instrumento musical tiene cuerdas y se toca con un arco?",
+    "respuesta": "VIOLÍN",
+    "descripcion": "El violín es un instrumento de cuerda frotada que se toca con un arco. Es conocido por su sonido melodioso y su versatilidad, siendo utilizado en una amplia variedad de géneros musicales, desde música clásica hasta folk y jazz."
+  },
+  {
+    "pista": "¿Cuál es el continente más pequeño del mundo?",
+    "respuesta": "OCEANÍA",
+    "descripcion": "Oceanía es el continente más pequeño del mundo, que incluye Australia, Nueva Zelanda, Papúa Nueva Guinea y miles de islas en el Pacífico. A menudo se le conoce como la región de Oceanía debido a su vasta extensión de océanos."
+  },
+  {
+    "pista": "¿Qué gas es esencial para la respiración humana?",
+    "respuesta": "OXÍGENO",
+    "descripcion": "El oxígeno es un gas esencial para la vida humana. Es necesario para la respiración celular, un proceso mediante el cual las células convierten los nutrientes en energía. Sin oxígeno, los seres humanos no podrían sobrevivir más de unos minutos."
+  },
+  {
+    "pista": "¿Quién escribió 'Cien años de soledad'?",
+    "respuesta": "GABRIEL GARCÍA MÁRQUEZ",
+    "descripcion": "Gabriel García Márquez, un escritor colombiano, es conocido por su obra maestra 'Cien años de soledad', que es considerada una de las novelas más importantes del siglo XX. La obra es un ejemplo del realismo mágico, un estilo literario que combina la realidad con elementos fantásticos."
+  },
+  {
+    "pista": "¿Cuál es el nombre del famoso detective creado por Arthur Conan Doyle?",
+    "respuesta": "SHERLOCK HOLMES",
+    "descripcion": "Sherlock Holmes es un personaje ficticio creado por el autor británico Arthur Conan Doyle. Es conocido por su aguda observación, habilidades deductivas y su famoso compañero, el Dr. John Watson. Las historias de Holmes han sido adaptadas en numerosas películas y series de televisión."
+  },
+  {
+    "pista": "¿Qué instrumento musical tiene teclas y cuerdas?",
+    "respuesta": "PIANO",
+    "descripcion": "El piano es un instrumento de teclado que produce sonido al golpear cuerdas con martillos. Es uno de los instrumentos más versátiles y populares en la música clásica, jazz, pop y muchos otros géneros."
+  },
+  {
+    "pista": "¿Cuál es el nombre del famoso volcán en Italia que entró en erupción en el año 79 d.C.?",
+    "respuesta": "VESUBIO",
+    "descripcion": "El Vesubio es un volcán activo ubicado cerca de Nápoles, Italia. Su erupción en el año 79 d.C. sepultó las ciudades romanas de Pompeya y Herculano bajo cenizas y lava, preservando sus ruinas para la posteridad."
+  },
+  {
+    "pista": "¿Qué animal es conocido por su capacidad de cambiar de color?",
+    "respuesta": "CAMALEÓN",
+    "descripcion": "Los camaleones son reptiles famosos por su habilidad para cambiar de color. Este fenómeno se debe a la presencia de células especiales en su piel llamadas cromatóforos, que les permiten adaptarse a su entorno y comunicarse con otros camaleones."
+  },
+  {
+    "pista": "¿Cuál es el nombre del famoso río que atraviesa Egipto?",
+    "respuesta": "NILO",
+    "descripcion": "El Nilo es el río más largo del mundo, fluyendo a través de varios países africanos antes de desembocar en el mar Mediterráneo. Ha sido una fuente vital de agua y sustento para las civilizaciones que han prosperado a lo largo de sus orillas durante miles de años."
+  },
+  {
+    "pista": "¿Qué continente es conocido por su biodiversidad y selvas tropicales?",
+    "respuesta": "AMÉRICA DEL SUR",
+    "descripcion": "América del Sur es conocida por su rica biodiversidad, especialmente en la cuenca del Amazonas, que alberga una gran variedad de especies de flora y fauna. El continente también cuenta con una gran diversidad de ecosistemas, desde desiertos hasta montañas nevadas."
+  }
+]
