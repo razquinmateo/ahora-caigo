@@ -61,7 +61,6 @@ export default class View {
     if (tiempo > 0 && !this.inputRespuesta.disabled && tiempo <= 5) {
       this.contenedorPistaBorde.classList.add("borde-parpadeante");
     } else {
-      // Quitar el parpadeo si la ronda terminó o tiempo > 5
       this.contenedorPistaBorde.classList.remove("borde-parpadeante");
     }
   }
@@ -213,7 +212,6 @@ export default class View {
     modal.show();
   }
 
-  // Bindear eventos
   bindIniciarJuego(handler) {
     this.btnIniciarJuego.addEventListener("click", () =>
       handler(this.inputNombre.value)

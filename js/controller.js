@@ -37,7 +37,6 @@ export default class Controller {
     this.view.bindMostrarRanking(this.handleMostrarRanking.bind(this));
   }
 
-  // Manejadores de eventos (event handlers)
   handleIniciarJuego(nombre) {
     if (nombre === "") {
       Swal.fire({
@@ -207,7 +206,7 @@ export default class Controller {
       confeti.style.left = Math.random() * 100 + "vw";
       confeti.style.width = 5 + Math.random() * 10 + "px";
       confeti.style.height = 5 + Math.random() * 10 + "px";
-      confeti.style.opacity = 0.5 + Math.random() * 0.5; // mantén esta
+      confeti.style.opacity = 0.5 + Math.random() * 0.5;
       confeti.style.animationDuration = 3 + Math.random() * 3 + "s";
       confetiContainer.appendChild(confeti);
     }

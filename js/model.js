@@ -73,9 +73,7 @@ export default class Model {
 
   iniciarRonda() {
     if (this.rondaActual >= this.maxRondas) return;
-    // La pregunta se obtiene del array preguntasSeleccionadas
     const pregunta = this.preguntasSeleccionadas[this.rondaActual];
-    // Aquí se puede añadir lógica para generar las pistas, etc.
     return pregunta;
   }
 
