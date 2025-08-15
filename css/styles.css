@@ -82,13 +82,24 @@ h4 {
   line-height: 1.4;
 }
 
-/* Responsive casillas */
+/* Contenedor de casillas en móviles */
 @media (max-width: 576px) {
+  #casillas-respuesta {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px;
+  }
+
   .casilla {
     width: 30px;
     height: 40px;
     font-size: 18px;
     line-height: 40px;
+  }
+
+  .casilla-espacio {
+    flex-basis: 100%;
+    height: 0;
   }
 }
 

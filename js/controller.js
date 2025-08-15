@@ -171,8 +171,9 @@ export default class Controller {
 
       if (len === 3) pistasPorPalabra = 1;
       else if (len >= 4 && len <= 6) pistasPorPalabra = 2;
-      else if (len >= 7 && len <= 10) pistasPorPalabra = 3;
-      else if (len > 10) pistasPorPalabra = 4;
+      else if (len >= 7 && len <= 8) pistasPorPalabra = 3;
+      else if (len >= 9 && len <= 10) pistasPorPalabra = 4;
+      else if (len > 10) pistasPorPalabra = 5;
 
       if (pistasPorPalabra > 0) {
         posicionesPista[indexPalabra] = [];
