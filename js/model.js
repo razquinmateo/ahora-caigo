@@ -8,7 +8,14 @@ export default class Model {
     this.preguntasSeleccionadas = [];
     this.vidas = 3;
     this.maxRondas = 10;
-    this.puntajeFinal = 0;
+    this.puntajeTotal = 0;
+    this.sonidoActivado = localStorage.getItem("sonidoActivado") !== "false";
+  }
+
+  toggleSonido() {
+    this.sonidoActivado = !this.sonidoActivado;
+    localStorage.setItem("sonidoActivado", this.sonidoActivado);
+    return this.sonidoActivado;
   }
 
   // getters
@@ -20,6 +27,7 @@ export default class Model {
       maxRondas: this.maxRondas,
       preguntaActual: this.preguntasSeleccionadas[this.rondaActual],
       tiempoRestante: this.tiempoRestante,
+      puntajeTotal: this.puntajeTotal
     };
   }
 
@@ -47,6 +55,7 @@ export default class Model {
   }
 
   iniciarTemporizador(callbackTick, callbackTimeout) {
+    this.detenerTemporizador();
     this.tiempoRestante = 30;
     callbackTick(this.tiempoRestante);
     this.timerInterval = setInterval(() => {
@@ -61,14 +70,21 @@ export default class Model {
   }
 
   detenerTemporizador() {
-    clearInterval(this.timerInterval);
+    if (this.timerInterval) {
+      clearInterval(this.timerInterval);
+      this.timerInterval = null;
+    }
   }
 
   reiniciarJuego() {
     this.cargarPreguntas();
     this.rondaActual = 0;
     this.vidas = 3;
-    this.puntajeFinal = 0;
+    this.puntajeTotal = 0;
+  }
+
+  sumarPuntos(puntos) {
+    this.puntajeTotal += puntos;
   }
 
   iniciarRonda() {
@@ -80,9 +96,9 @@ export default class Model {
   verificarRespuesta(intento) {
     const respuestaCorrecta =
       this.preguntasSeleccionadas[this.rondaActual].respuesta;
-    const intentoNormalizado = this.quitarTildes(intento).toUpperCase();
+    const intentoNormalizado = this.quitarTildes(intento.trim()).toUpperCase();
     const respuestaNormalizada =
-      this.quitarTildes(respuestaCorrecta).toUpperCase();
+      this.quitarTildes(respuestaCorrecta.trim()).toUpperCase();
 
     return intentoNormalizado === respuestaNormalizada;
   }
@@ -126,8 +142,9 @@ export default class Model {
   }
 
   calcularPuntajeFinal() {
-    this.puntajeFinal = 100 + this.vidas * 25;
-    return this.puntajeFinal;
+    // Bono final por vidas restantes
+    const bonoVidas = this.vidas * 25;
+    return this.puntajeTotal + bonoVidas;
   }
 
   guardarEnRanking(nombre, puntaje) {
@@ -146,6 +163,12 @@ export default class Model {
 
   obtenerRanking() {
     return JSON.parse(localStorage.getItem("ranking")) || [];
+  }
+
+  obtenerMejorPuntaje() {
+    const ranking = this.obtenerRanking();
+    if (ranking.length === 0) return 0;
+    return ranking[0].puntaje;
   }
 
   // Gestión del jugador

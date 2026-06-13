@@ -4,6 +4,10 @@ export default class View {
     this.pantallaInicial = document.getElementById("pantalla-inicial");
     this.pantallaJuego = document.getElementById("pantalla-juego");
     this.inputNombre = document.getElementById("nombre-jugador");
+    this.mejorPuntajeContainer = document.getElementById(
+      "mejor-puntaje-container"
+    );
+    this.mejorPuntajeTexto = document.getElementById("mejor-puntaje");
     this.btnIniciarJuego = document.getElementById("btn-iniciar-juego");
     this.nombreMostrado = document.getElementById("nombre-mostrado");
     this.contenedorPista = document.getElementById("pista-texto");
@@ -17,10 +21,20 @@ export default class View {
     this.mensajeCorrecto = document.getElementById("mensaje-correcto");
     this.vidasContainer = document.getElementById("vidas");
     this.rondaActualTexto = document.getElementById("ronda-actual");
+    this.puntajeActualTexto = document.getElementById("puntaje-actual");
     this.btnCambiarJugador = document.getElementById("btn-cambiar-jugador");
     this.btnReintentarRonda = document.getElementById("btn-reintentar-ronda");
     this.contenedorPistaBorde = document.getElementById("contenedor-pista");
     this.btnRanking = document.getElementById("btn-ranking");
+    this.btnSonido = document.getElementById("btn-sonido");
+    this.iconoSonido = document.getElementById("icono-sonido");
+// Inicializar Audios
+this.audioFondo = new Audio("assets/audio/musica-fondo.mp3");
+this.audioFondo.loop = true;
+this.audioAlerta = new Audio("assets/audio/alerta-tiempo.mp3");
+this.audioAlerta.loop = true;
+this.audioAcierto = new Audio("assets/audio/acierto.mp3");
+this.audioError = new Audio("assets/audio/error.mp3");
 
     // Estilos iniciales
     this.btnReintentarRonda.classList.add("btn-mismo-tamano");
@@ -46,6 +60,15 @@ export default class View {
     this.nombreMostrado.textContent = nombre;
   }
 
+  mostrarMejorPuntaje(puntaje) {
+    if (puntaje > 0) {
+      this.mejorPuntajeTexto.textContent = puntaje;
+      this.mejorPuntajeContainer.classList.remove("d-none");
+    } else {
+      this.mejorPuntajeContainer.classList.add("d-none");
+    }
+  }
+
   actualizarVidas(vidas) {
     const corazones = "❤️".repeat(vidas) + "🤍".repeat(3 - vidas);
     this.vidasContainer.textContent = corazones;
@@ -55,8 +78,31 @@ export default class View {
     this.rondaActualTexto.textContent = `Ronda: ${ronda + 1} / ${maxRondas}`;
   }
 
+  actualizarPuntaje(puntos) {
+    this.puntajeActualTexto.textContent = `Puntos: ${puntos}`;
+  }
+
+  mostrarIncrementoPuntaje(puntos) {
+    const rect = this.puntajeActualTexto.getBoundingClientRect();
+    const incremento = document.createElement("div");
+    incremento.classList.add("puntaje-incremento");
+    incremento.textContent = `+${puntos}`;
+    incremento.style.left = `${rect.left + rect.width / 2}px`;
+    incremento.style.top = `${rect.top - 20}px`;
+
+    document.body.appendChild(incremento);
+
+    setTimeout(() => incremento.remove(), 1500);
+  }
+
   actualizarTemporizador(tiempo) {
     this.temporizador.textContent = tiempo;
+
+    if (tiempo <= 10) {
+      this.temporizador.classList.add("timer-critico");
+    } else {
+      this.temporizador.classList.remove("timer-critico");
+    }
 
     if (tiempo > 0 && !this.inputRespuesta.disabled && tiempo <= 5) {
       this.contenedorPistaBorde.classList.add("borde-parpadeante");
@@ -115,14 +161,15 @@ export default class View {
   }
 
   mostrarMensajeIncorrecto() {
-    Swal.fire({
-      icon: "error",
-      title: "Incorrecto",
-      text: "¡Seguí intentando!",
-      timer: 1200,
-      showConfirmButton: false,
-    });
+    this.efectoShake();
     this.inputRespuesta.value = "";
+  }
+
+  efectoShake() {
+    this.inputRespuesta.classList.add("shake");
+    setTimeout(() => {
+      this.inputRespuesta.classList.remove("shake");
+    }, 500);
   }
 
   mostrarMensajeVictoria(nombreJugador, puntajeFinal) {
@@ -181,6 +228,7 @@ export default class View {
     this.contenedorPistaBorde.classList.remove("borde-parpadeante");
     this.casillasRespuesta.innerHTML = "";
     this.temporizador.textContent = "30";
+    this.temporizador.classList.remove("timer-critico");
     this.btnReintentarRonda.classList.add("d-none");
   }
 
@@ -210,6 +258,70 @@ export default class View {
 
     const modal = new bootstrap.Modal(document.getElementById("rankingModal"));
     modal.show();
+  }
+
+  // Gestión de Audio
+  actualizarIconoSonido(activado) {
+    this.iconoSonido.className = activado ? "fas fa-volume-up" : "fas fa-volume-mute";
+    if (!activado) {
+      this.detenerTodoElAudio();
+    }
+  }
+
+  reproducirMusicaFondo(activado) {
+    if (!activado) return;
+    this.audioFondo.volume = 0.5;
+    this.audioFondo.play().catch(e => console.log("Autoplay bloqueado hasta interacción"));
+  }
+
+  setEstadoCriticoAudio(esCritico, activado) {
+    if (!activado) return;
+    if (esCritico) {
+      // Efecto de desvanecimiento de música de fondo
+      let vol = 0.5;
+      const interval = setInterval(() => {
+        vol -= 0.05;
+        if (vol <= 0.1) {
+          vol = 0.1;
+          clearInterval(interval);
+        }
+        this.audioFondo.volume = vol;
+      }, 100);
+      
+      this.audioAlerta.currentTime = 0;
+      this.audioAlerta.play().catch(() => {});
+    } else {
+      this.audioFondo.volume = 0.5;
+      this.audioAlerta.pause();
+      this.audioAlerta.currentTime = 0;
+    }
+  }
+
+  reproducirFeedback(tipo, activado) {
+    if (!activado) return;
+    
+    // Detener y resetear ambos sonidos para evitar solapamientos
+    this.audioAcierto.pause();
+    this.audioAcierto.currentTime = 0;
+    this.audioError.pause();
+    this.audioError.currentTime = 0;
+
+    if (tipo === "acierto") {
+      this.audioAcierto.play().catch((e) => console.error("Error reproduciendo acierto:", e));
+    } else {
+      this.audioError.play().catch((e) => console.error("Error reproduciendo error:", e));
+    }
+  }
+
+  detenerTodoElAudio() {
+    [this.audioFondo, this.audioAlerta].forEach(a => {
+      a.pause();
+      a.currentTime = 0;
+    });
+  }
+
+  bindToggleSonido(handler) {
+    this.btnSonido.addEventListener("click", handler);
   }
 
   bindIniciarJuego(handler) {

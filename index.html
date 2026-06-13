@@ -17,10 +17,21 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
   <body class="bg-dark text-white">
+    <!-- Botón de Sonido -->
+    <div id="control-sonido" class="position-fixed top-0 end-0 m-3" style="z-index: 1050;">
+      <button id="btn-sonido" class="btn btn-outline-light rounded-circle">
+        <i id="icono-sonido" class="fas fa-volume-up"></i>
+      </button>
+    </div>
+
     <div class="container py-5">
       <!-- Pantalla inicial: nombre del jugador -->
       <div id="pantalla-inicial" class="text-center">
         <h1 class="mb-4">¡Bienvenido a Ahora Caigo!</h1>
+
+        <div id="mejor-puntaje-container" class="mb-4 d-none">
+          <span class="badge bg-warning text-dark fs-5">🏆 Récord Actual: <span id="mejor-puntaje">0</span></span>
+        </div>
 
         <div class="alert alert-info text-start w-75 mx-auto mb-4">
           <h5>📜 Cómo jugar:</h5>
@@ -161,6 +172,7 @@
           <div class="columna">
             <div id="vidas">❤️❤️❤️</div>
             <div id="ronda-actual">Ronda: 1 / 10</div>
+            <div id="puntaje-actual">Puntos: 0</div>
           </div>
 
           <div class="columna">
@@ -213,6 +225,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
     <script src="js/main.js" type="module"></script>
   </body>
 </html>
